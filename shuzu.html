@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <title>ShuZu</title>
+  </head>
+  <body>
+    <script>
+      var scores = [65, 57, 89, 56, 42, 71, 38, 68, 78, 54, 49, 52, 67, 66, 64, 62, 65];
+      var min = scores[0];
+      var imed
+      for (var i = 1; i < scores.length; i++){
+        if (scores[i] < min){
+          min = scores[i];
+          imed = i;
+        }
+      }
+      alert("数组中最小的数是：" + min + "下标是：" + imed);
+      // var SB = scores.sort();
+      // alert (SB[0]);
+    </script>
+  </body>
+</html>
