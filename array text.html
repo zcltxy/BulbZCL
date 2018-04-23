@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>shuzu text1</title>
+  </head>
+  <body>
+    <script>
+      var scores1 = [65, 57, 89, 56, 42, 71, 38, 68, 78, 54, 49, 52, 67, 66, 64,];
+      var scores2 = [64, 51, 84, 51, 47, 74, 33, 61, 75, 51, 41, 57,];
+      var min = scores1[0];
+      
+      // function jishu(arr1) {
+      //   for (var i = 0; i < arr1.length; i++){
+      //     if (i % 2 == 1){
+      //        document.write("奇数项是" + arr1[i] + "<br>");
+      //     }
+      //   }
+      // }
+      //jishu(scores1);
+
+
+      // function oushu(arr1) {
+      //   for (var i = 0; i < arr1.length; i++){
+      //     if (i % 2 == 0){
+      //        document.write("偶数项是" + arr1[i] + "<br>");
+      //     }
+      //   }
+      // }
+      // oushu(scores1);
+
+
+      function he(arr1) {
+        var sum = 0;
+        
+        for (var i = 0; i < arr1.length; i++){
+          sum = sum + arr1[i];
+        } 
+        document.write (sum);
+      }
+      he(scores1);
+      document.write("<br>");
+      he(scores2);
+      
+    
+    </script>
+  </body>
+</html>
