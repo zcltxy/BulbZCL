@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>boject</title>
+    <meta charset = "utf-8">
+  </head>
+  <body>
+    <script>
+    var Audi = {
+      make: 'Audi',
+      model: 'A6',
+      year: 2016,
+      color: 'black',
+      passengers: '4',
+      convertlble: false,
+      mileage: 20000
+    };
+
+    var Bugatti = {
+      make: 'Bugatti',
+      model: 'veyron',
+      year: 2017,
+      color: 'pink',
+      passengers: '2',
+      convertlble: true,
+      mileage: 2000
+    };
+
+    // document.write(Audi.make + "的颜色是" + Audi.color +"<br>");
+    // document.write(Bugatti.make + "的颜色是" + Bugatti.color +"<br>");
+
+    function isNewCar(car) {
+      if ( car.year > 2016 && car.mileage <= 10000){
+        document.write(car.make + car.model + "是新车！走 兄弟们！抄家伙 砸了！");
+      } else {
+        document.write(car.make + car.model + "是破车，不值钱 滚！")
+      }
+      document.write("<br>");
+    }
+
+    isNewCar(Audi);
+    isNewCar(Bugatti);
+    
+    </script>
+  </body>
+</html>
