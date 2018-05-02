@@ -23,8 +23,21 @@
       color: 'pink',
       passengers: '2',
       convertlble: true,
-      mileage: 2000
+      mileage: 2000,
+      drive:function(){
+        alert('Zoom Zoom!!!');
+      },
+      setColor: function (c) {
+        this.color = c;
+      },
+      getColor: function () {
+        return this.color;
+      }
     };
+
+    // document.write(Bugatti.getColor() + "<br>");
+    Bugatti.setColor('golden');
+    document.write(Bugatti.getColor() + "<br>");
 
     // document.write(Audi.make + "的颜色是" + Audi.color +"<br>");
     // document.write(Bugatti.make + "的颜色是" + Bugatti.color +"<br>");
@@ -38,8 +51,9 @@
       document.write("<br>");
     }
 
-    isNewCar(Audi);
-    isNewCar(Bugatti);
+    // isNewCar(Audi);
+    // isNewCar(Bugatti);
+    // Bugatti.drive();
     
     </script>
   </body>
