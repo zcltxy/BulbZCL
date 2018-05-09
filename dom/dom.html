@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    function init() {
+      var h1Obj = document.getElementById("title");
+      var picObj = document.getElementById("pic");
+      h1Obj.innerHTML = "GOODBYE WORLD!!";
+      h1Obj.setAttribute("class","tit");
+      picObj.getAttribute("alt");
+    }
+    function changePicture() {
+      var picObj = document.getElementById("pic");
+      if (picObj.getAttribute("src") == "1.jpg") {
+        picObj.setAttribute("src","2.jpg");
+      } else {
+        picObj.setAttribute("src","1.jpg");
+      }
+
+    }
+    
+    window.onload = init;
+  </script>
+</head>
+<body>
+  <h1 id="title">hello world!!!!!!!!</h1>
+  <img id="pic" src="1.jpg" alt="妇联图片">
+  <button onclick="changePicture()">点我换图</button>
+</body>
+</html>
