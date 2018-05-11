@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <script>
+    // function init() {
+    //   var str="i'm fine thanks and u!"; // 字符串实际上是以对象的形式储存在计算机中
+      
+    //   document.write(str.length + "<br>"); // 获取字符串长度
+      
+    //   document.write(str.indexOf("and") + "<br>"); //查询字符串位置信息数字
+     
+    //   document.write(str.substring(16,19) + "<br>"); //根据给的位置 显示出那位置的内容
+    // }
+     
+
+    function init2() {
+      var str="i'm fine thanks and u!";
+      var str2 = "thanks";
+      document.write(str.substring(str.indexOf(str2) , str.indexOf(str2) + str2.length));
+    }
+    
+    //  window.onload = init;  
+     window.onload = init2;  
+
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
