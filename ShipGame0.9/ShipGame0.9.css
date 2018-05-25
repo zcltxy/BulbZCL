@@ -1,0 +1,52 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+div#board {
+    position: relative;
+    width: 1024px;
+    height:863px;         /*规定棋盘的宽高 谢谢*/ 
+    margin: auto;
+    background: url("board.jpg") no-repeat; /*棋盘图片 谢谢*/  
+}
+
+
+div#messageArea {
+    position: absolute;
+    top: 0px;
+    left: 0px;                     /*左上角显示东东*/ 
+    color: rgb(85, 180, 20);
+}
+
+table {
+    position: absolute;
+    left: 173px;
+    top: 98px;            /*表格左上角在棋盘中的起始位置*/ 
+    border-spacing: 0px;
+}
+
+td {
+    width: 94px;
+    height: 94px;  /*每个格子的宽高 （书上数据）*/ 
+}
+
+form {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;             /*一条总表单*/ 
+    padding: 15px;
+    background-color: rgb(85, 180, 20);
+}
+
+form input {
+    background-color: rgb(150, 210, 120);
+    border-color: rgb(85, 180, 20);        /*输入框 （交互）*/ 
+    font-size: 1em;
+}
+
+.hit {
+    background: url("ship.png") no-repeat center center;   /*击中图标*/ 
+}
+.miss {
+    background: url("miss.png") no-repeat center center;   /*MISS图标*/ 
+}
